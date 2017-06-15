@@ -1,0 +1,4 @@
+<resources>
+    <!--320x480 px -->
+    <dimen name="defaultsize">20sp</dimen>
+</resources>

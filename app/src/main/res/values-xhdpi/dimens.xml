@@ -1,0 +1,5 @@
+<resources>
+    <!--320x480 px -->
+    <dimen name="actionbarheight">22dp</dimen>
+    <dimen name="defaultsize">16sp</dimen>
+</resources>

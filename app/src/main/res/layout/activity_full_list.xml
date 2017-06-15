@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="4"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/activity_full_list_zone_rt"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/corner_yellow"
+            android:text="@string/zonertitalia"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/activity_full_list_comitato"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/darkgray_background"
+            android:text="@string/comitatonazionale"
+            android:textAllCaps="false"
+            android:textColor="@color/bluetext"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_full_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/activity_full_list_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp" />
+
+        <!-- <ScrollView
+             android:layout_width="30dp"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:fillViewport="true">
+
+             <LinearLayout
+                 android:id="@+id/side_index"
+                 android:layout_width="30dp"
+                 android:layout_height="wrap_content"
+                 android:background="@color/white"
+                 android:orientation="vertical" />
+         </ScrollView>-->
+        <!--
+                <ScrollView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:id="@+id/side_index"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </ScrollView>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_full_list_linear_zone_list_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/activity_tavole_commit_first"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_primary_zona" />
+
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_right" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/activity_tavole_commit_second"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_secondary_zona" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_tavole_commit_third"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_terza_zona" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_right" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_tavole_commit_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_quarter_zona" />
+
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_right" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3F51B5</color>
+    <color name="blue">#01438D</color>
+    <color name="darkblue">#283593</color>
+    <color name="darkbrown">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FDA61E</color>
+    <color name="gray">#c3c3c3</color>
+    <color name="appblue">#01438c</color>
+    <color name="appyellow">#f5a623</color>
+    <color name="black">#000000</color>
+    <color name="green">#1bc442</color>
+    <color name="darkgray">#DDDDDD</color>
+    <color name="bluetext">#4D7BAC</color>
+    <color name="lightgray">#F6F6F6</color>
+    <color name="seekbar_bg">#fdd99b</color>
+    <color name="actionbarblue">#1765BB</color>
+    <color name="background">#F5F5F5</color>
+    <color name="lightsilver">#455a64</color>
+    <color name="fontgray">#424242</color>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+
+        <ImageView
+            android:id="@+id/activity_main_imageView"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_logo_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="8"
+            android:background="@color/blue">
+
+            <ImageView
+                android:id="@+id/main_center"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_center" />
+
+            <LinearLayout
+                android:id="@+id/content_main_search"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_alignStart="@+id/content_main_document"
+                android:layout_alignTop="@+id/main_center"
+                android:layout_marginTop="-15dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_main_search_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:src="@drawable/main_search_disable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Search"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_main_tavole"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_above="@+id/content_main_search"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_main_tavole_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/ic_tavole_disable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/tavolecomitato"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_main_login"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/main_center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_main_login_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_login" />
+
+                <TextView
+                    android:id="@+id/content_mian_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_rti_linear"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/main_center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="-15dp"
+                android:layout_toRightOf="@+id/main_center"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_main_rti_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_rti" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/rti"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_main_calendario"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_below="@+id/main_rti_linear"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/main_center"
+                android:layout_toRightOf="@+id/main_center"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/content_main_calendario_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/ic_calendario_disable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/calendario"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content_main_document"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:layout_alignTop="@+id/content_main_calendario"
+                android:layout_below="@+id/content_main_search"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/main_center"
+                android:layout_toStartOf="@+id/main_center"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/content_main_document_image"
+                    android:layout_width="70dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/ic_document_disable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/Documenti"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/activity_main_gear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_gear" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1043576275125",
+    "firebase_url": "https://approundtableitalia.firebaseio.com",
+    "project_id": "approundtableitalia",
+    "storage_bucket": "approundtableitalia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043576275125:android:9ce7dff01c5fd053",
+        "android_client_info": {
+          "package_name": "com.portalidea.roundtableitalia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043576275125-rvve3tn272g9jvsu8n5c9stv4s027ned.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.portalidea.roundtableitalia",
+            "certificate_hash": "99438D79D8FEBB287988F60EFCBCE3CFCD9E675D"
+          }
+        },
+        {
+          "client_id": "1043576275125-3pot74t3otl0cab9502boagguc5025dj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-4ggOXIwaQcKnfo1VQ5rzH6fHfa4oVPE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043576275125-3pot74t3otl0cab9502boagguc5025dj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

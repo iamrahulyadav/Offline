@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/actionbar"></include>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/llTab2_HeaderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="50dp"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:id="@+id/edittextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+
+
+                            <EditText
+                                android:id="@+id/header_list_surname_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/corner_border"
+                                android:drawableLeft="@drawable/places_ic_search"
+                                android:drawablePadding="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="Cognome"
+                                android:inputType="textPersonName"
+                                android:maxLines="1"
+                                android:padding="10dp" />
+
+                            <EditText
+                                android:id="@+id/header_list_tovelo_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+
+                                android:background="@drawable/corner_border"
+                                android:drawableLeft="@drawable/ic_tavola"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/NTovelo"
+                                android:maxLines="1"
+                                android:padding="10dp" />
+
+                            <EditText
+                                android:id="@+id/header_list_city_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/corner_border"
+                                android:drawableLeft="@drawable/ic_location_white"
+                                android:drawablePadding="10dp"
+                                android:hint="@string/citta"
+                                android:maxLines="1"
+                                android:padding="10dp" />
+
+                            <EditText
+                                android:id="@+id/header_list_provincia_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/corner_border"
+                                android:drawableLeft="@drawable/ic_location_white"
+                                android:drawablePadding="10dp"
+                                android:hint="Provincia"
+                                android:maxLines="1"
+                                android:padding="10dp" />
+
+                            <EditText
+                                android:id="@+id/header_list_profession_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/corner_border"
+                                android:drawableLeft="@drawable/ic_professione"
+                                android:drawablePadding="10dp"
+                                android:hint="Professione"
+                                android:maxLines="1"
+                                android:padding="10dp" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="5"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/emptyViewUserList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray"
+                        android:gravity="center"
+                        android:text="@string/blanktext"
+                        android:textSize="@dimen/defaultsize"
+                        android:visibility="gone" />
+
+                    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                        android:id="@+id/list"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp" />
+
+                    <ScrollView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:fillViewport="true">
+
+                        <LinearLayout
+                            android:id="@+id/side_index"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/llTab1_HeaderList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <org.osmdroid.views.MapView
+                android:id="@+id/openmapview"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/llDistance_HEADER_LIST"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <LinearLayout
+                android:id="@+id/llDistance_HEADER_LIST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/seekbar_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/activity_serach_linear_pinname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tvSelectedMarker"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/inradiusof"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvProgress_HeaderList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/white" />
+
+                <SeekBar
+                    android:id="@+id/sbDistance_HEADER_LIST"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_minus15sdp"
+                    android:layout_marginRight="@dimen/_minus15sdp"
+                    android:scaleType="fitXY"
+                    android:thumb="@drawable/ic_yellow_dot"
+                    android:thumbOffset="0dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_search_linear_top"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_margin="20dp"
+                android:background="@color/white"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/main_cerca_tabler"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_yellow"
+                    android:drawableLeft="@drawable/ic_user_white"
+                    android:paddingLeft="5dp"
+                    android:text="@string/CercaTabler"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/main_tablers_vicini_a_te"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_location_blue"
+                    android:paddingLeft="5dp"
+                    android:text="@string/Tablersviciniate"
+                    android:textAllCaps="false"
+                    android:textColor="@color/appblue"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>
